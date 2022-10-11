@@ -6,7 +6,7 @@ public:
         int res=1;
         int li=0;
         for(int i=0;i<n;i++){
-            hash[i]=0;
+            hash[i]=i;
             for(int pre=0;pre<i;pre++){
                 if(nums[pre]<nums[i] && dp[i]<1+dp[pre])
                 {
